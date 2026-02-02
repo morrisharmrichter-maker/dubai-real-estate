@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QJ3PH5VN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4QJ3PH5VN7');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Dubai Real Estate Investment Intelligence</title>
+    <meta name="description" content="Search Dubai real estate developers, projects, neighborhoods, market reports, and investment intelligence.">
+    <link rel="canonical" href="https://dubai.obsidianprivate.capital/search">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 2rem 5%;
+        }
+        header a { color: white; text-decoration: none; opacity: 0.9; font-size: 0.9rem; }
+        header a:hover { opacity: 1; }
+        header h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 3rem 5%; }
+        
+        .search-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .search-input-wrapper {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 1.25rem 3rem 1.25rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: border-color 0.2s;
+        }
+        
+        #searchInput:focus {
+            outline: none;
+            border-color: #c9a55a;
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #c9a55a;
+        }
+        
+        .filters {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: #f8f8f8;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover {
+            background: #c9a55a;
+            color: white;
+            border-color: #c9a55a;
+        }
+        
+        .filter-btn.active {
+            background: #c9a55a;
+            color: white;
+            border-color: #c9a55a;
+        }
+        
+        #results {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        #resultsCount {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .result-item {
+            padding: 1.5rem;
+            border-left: 4px solid #c9a55a;
+            background: #f8f8f8;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+        
+        .result-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-item h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+        
+        .result-item h3 a:hover {
+            color: #c9a55a;
+        }
+        
+        .result-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #c9a55a;
+            color: white;
+            font-size: 0.75rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .result-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #999;
+        }
+        
+        .no-results-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">← Back to Home</a>
+        <h1>Search</h1>
+        <p>Find Developers, Projects, Neighborhoods & Intelligence</p>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search for developers, projects, neighborhoods..."
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="developers">Developers</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+                <button class="filter-btn" data-filter="neighborhoods">Neighborhoods</button>
+                <button class="filter-btn" data-filter="intelligence">Intelligence</button>
+            </div>
+        </div>
+
+        <div id="results">
+            <div id="resultsCount"></div>
+            <div id="resultsList"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Obsidian Private Capital. Dubai luxury real estate investment intelligence.</p>
+    </footer>
+
+    <script>
+        // Search database
+        const searchData = [
+            // Developers
+            { title: "Emaar Properties", category: "developers", url: "/developers/emaar", description: "Government-backed developer with 750+ completed projects. AAA rating, NYSE-listed." },
+            { title: "Nakheel", category: "developers", url: "/developers/nakheel", description: "Dubai Holding subsidiary, creator of Palm Jumeirah and iconic waterfront developments." },
+            { title: "DAMAC Properties", category: "developers", url: "/developers/damac", description: "45,000+ units delivered, competitive pricing strategy, branded partnerships." },
+            { title: "Sobha Realty", category: "developers", url: "/developers/sobha", description: "Luxury focus, backward integration, premium quality positioning." },
+            { title: "Binghatti", category: "developers", url: "/developers/binghatti", description: "Fast-growing developer with 40+ completed projects, architectural design focus." },
+            { title: "Meraas", category: "developers", url: "/developers/meraas", description: "Government-owned, lifestyle-focused developments, City Walk creator." },
+            { title: "Dubai Properties", category: "developers", url: "/developers/dubai-properties", description: "Dubai Holding subsidiary, Business Bay and JBR developer." },
+            { title: "Omniyat", category: "developers", url: "/developers/omniyat", description: "Ultra-luxury boutique developer, architectural landmark focus." },
+            { title: "Azizi Developments", category: "developers", url: "/developers/azizi", description: "Mid-market volume developer, affordable housing focus." },
+            { title: "Danube Properties", category: "developers", url: "/developers/danube", description: "Budget-friendly developer, entry-level market specialist." },
+            
+            // Projects - Emaar
+            { title: "Downtown Dubai", category: "projects", url: "/projects/downtown-dubai", description: "Ultra-luxury Burj Khalifa district, 5-7% yields, €2.5M-€20M+ pricing." },
+            { title: "Palm Jumeirah", category: "projects", url: "/projects/palm-jumeirah", description: "World's largest man-made island, 4-6% yields, €1M-€50M+ pricing." },
+            { title: "Dubai Hills Estate", category: "projects", url: "/projects/dubai-hills-estate", description: "Modern master community with golf course, 6-8% yields, €800K-€5M." },
+            { title: "Dubai Marina Emaar", category: "projects", url: "/projects/dubai-marina-emaar", description: "Waterfront towers, 6-8% yields, €1.8M-€5M+ pricing." },
+            { title: "Arabian Ranches", category: "projects", url: "/projects/arabian-ranches", description: "Premier villa community with golf, 5-7% yields, €1M-€6M." },
+            { title: "The Oasis by Emaar", category: "projects", url: "/projects/the-oasis", description: "Mediterranean-inspired community, 7-9% yields, €600K-€3M." },
+            { title: "Dubai Creek Harbour", category: "projects", url: "/projects/dubai-creek-harbour", description: "6 km² mega-development with Creek Tower, 6-8% yields." },
+            { title: "The Valley", category: "projects", url: "/projects/the-valley", description: "Nature-inspired affordable community, 7-9% yields, €450K-€1.2M." },
+            { title: "Emaar Beachfront", category: "projects", url: "/projects/emaar-beachfront", description: "Premium waterfront, 5-7% yields, €2.5M-€15M+." },
+            { title: "Arabian Ranches 3", category: "projects", url: "/projects/arabian-ranches-3", description: "Modern villa community, 6-8% yields, €2.2M-€5M." },
+            
+            // Projects - DAMAC
+            { title: "DAMAC Lagoons", category: "projects", url: "/projects/damac-lagoons", description: "Mediterranean-themed waterfront, 8-10% yields, €600K-€2M." },
+            { title: "DAMAC Hills", category: "projects", url: "/projects/damac-hills", description: "Golf course master community, 7-9% yields, €1.5M-€6M." },
+            { title: "DAMAC Hills 2", category: "projects", url: "/projects/damac-hills-2", description: "Budget expansion, 8-10% yields, €1.4M-€2.5M." },
+            
+            // Projects - Nakheel
+            { title: "Dubai Islands", category: "projects", url: "/projects/dubai-islands", description: "Five interconnected islands, 6-8% yields, €375K-€2.5M+." },
+            { title: "The World Islands", category: "projects", url: "/projects/the-world-islands", description: "300 private islands, ultra-exclusive, €10M-€100M+ per island." },
+            { title: "Dragon City", category: "projects", url: "/projects/dragon-city", description: "China-focused trade district, 8-10% yields, €100K-€375K." },
+            
+            // Projects - Binghatti
+            { title: "Binghatti Avenue", category: "projects", url: "/projects/binghatti-avenue", description: "Business Bay flagship, 7-9% yields, €375K-€750K." },
+            { title: "Binghatti Mercedes-Benz Places", category: "projects", url: "/projects/binghatti-mercedes-benz-places", description: "World's first Mercedes residential, 4-6% yields, €750K-€5M+." },
+            { title: "Jacob & Co Residences", category: "projects", url: "/projects/jacob-co-residences", description: "Luxury watchmaker collaboration, 5-7% yields, €500K-€2.5M+." },
+            
+            // Neighborhoods
+            { title: "Downtown Dubai Neighborhood", category: "neighborhoods", url: "/neighborhoods/", description: "Ultra-luxury central business district with Burj Khalifa." },
+            { title: "Business Bay Area", category: "neighborhoods", url: "/neighborhoods/", description: "Central business district with 240+ towers, DIFC proximity." },
+            { title: "Palm Jumeirah Area", category: "neighborhoods", url: "/neighborhoods/", description: "Iconic island living with beachfront villas and luxury apartments." },
+            { title: "Dubai Marina Neighborhood", category: "neighborhoods", url: "/neighborhoods/", description: "Waterfront living with 200+ residential towers." },
+            
+            // Intelligence
+            { title: "Market Reports", category: "intelligence", url: "/intelligence/market-reports/", description: "Quarterly and annual Dubai real estate market analysis." },
+            { title: "Tax & Legal Guides", category: "intelligence", url: "/intelligence/tax-guides/", description: "UAE property taxation, Golden Visa requirements, legal framework." },
+            { title: "Government Policies", category: "intelligence", url: "/intelligence/government-policies/", description: "DLD regulations, RERA guidelines, official policies." },
+            { title: "Investment Data & Analytics", category: "intelligence", url: "/intelligence/investment-data/", description: "Live market data, ROI calculators, yield analysis tools." },
+            { title: "Developer Analysis", category: "intelligence", url: "/intelligence/developer-analysis/", description: "Financial health, delivery records, risk profiles." },
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const resultsCount = document.getElementById('resultsCount');
+        const resultsList = document.getElementById('resultsList');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        
+        let currentFilter = 'all';
+
+        // Filter buttons
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                performSearch();
+            });
+        });
+
+        // Search input
+        searchInput.addEventListener('input', performSearch);
+
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            
+            let results = searchData;
+            
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                results = results.filter(item => item.category === currentFilter);
+            }
+            
+            // Apply search query
+            if (query) {
+                results = results.filter(item => 
+                    item.title.toLowerCase().includes(query) ||
+                    item.description.toLowerCase().includes(query)
+                );
+            }
+            
+            displayResults(results, query);
+        }
+
+        function displayResults(results, query) {
+            if (results.length === 0) {
+                resultsCount.textContent = query ? `No results found for "${query}"` : 'Start typing to search...';
+                resultsList.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <p>No results found. Try different keywords or filters.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            resultsCount.textContent = `${results.length} result${results.length !== 1 ? 's' : ''} found`;
+            
+            resultsList.innerHTML = results.map(item => `
+                <div class="result-item">
+                    <span class="result-category">${item.category}</span>
+                    <h3><a href="${item.url}">${highlightMatch(item.title, query)}</a></h3>
+                    <p class="result-description">${highlightMatch(item.description, query)}</p>
+                </div>
+            `).join('');
+        }
+
+        function highlightMatch(text, query) {
+            if (!query) return text;
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<strong style="background: #fff3cd;">$1</strong>');
+        }
+
+        // Initial display
+        performSearch();
+    </script>
+</body>
+</html>
