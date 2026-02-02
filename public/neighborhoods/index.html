@@ -1,0 +1,506 @@
+🚀 Phase 2: Create Neighborhoods Directory Structure
+Step 7: Create Neighborhoods Hub
+bash# Create neighborhoods directory
+mkdir -p public/neighborhoods
+
+cat > public/neighborhoods/index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QJ3PH5VN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4QJ3PH5VN7');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Neighborhoods Guide 2026 | Prime Location Analysis</title>
+    <meta name="description" content="Comprehensive guide to Dubai's prime neighborhoods including Downtown, Business Bay, Dubai Marina, Palm Jumeirah, and emerging areas. Investment analysis, amenities, and market data.">
+    <link rel="canonical" href="https://dubai.obsidianprivate.capital/neighborhoods/">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 2rem 5%;
+        }
+        header a { color: white; text-decoration: none; opacity: 0.9; font-size: 0.9rem; }
+        header a:hover { opacity: 1; }
+        header h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 5%; }
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .breadcrumb a { color: #c9a55a; text-decoration: none; }
+        .intro {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+        .intro h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+        .intro p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; }
+        .neighborhoods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .neighborhood-card {
+            background: white;
+            padding: 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .neighborhood-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .neighborhood-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 2rem;
+        }
+        .neighborhood-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .neighborhood-header .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        .neighborhood-body {
+            padding: 2rem;
+        }
+        .neighborhood-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f8f8;
+            border-radius: 4px;
+        }
+        .stat-item .value {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #c9a55a;
+            margin-bottom: 0.25rem;
+        }
+        .stat-item .label {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .neighborhood-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #444;
+        }
+        .neighborhood-body ul {
+            margin: 0 0 1.5rem 1.5rem;
+        }
+        .neighborhood-body li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+        .neighborhood-body a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #c9a55a;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .neighborhood-body a:hover { background: #b8944a; }
+        .neighborhood-body .coming-soon {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #e0e0e0;
+            color: #666;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">← Back to Home</a>
+        <h1>Dubai Neighborhoods</h1>
+        <p>Prime Location Analysis & Investment Intelligence</p>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / Neighborhoods
+        </div>
+
+        <section class="intro">
+            <h2>Comprehensive Dubai Neighborhood Intelligence</h2>
+            <p>Navigate Dubai's diverse neighborhoods with detailed location analysis covering investment potential, amenities, demographics, transportation, schools, and lifestyle factors. Our neighborhood guides provide UHNW investors with critical micro-market intelligence for portfolio allocation across Dubai's prime residential areas.</p>
+            <p>Each neighborhood profile includes rental yield data, price trends, major developments, accessibility analysis, and comparative investment metrics enabling informed decision-making across Dubai's luxury real estate landscape.</p>
+        </section>
+
+        <div class="neighborhoods-grid">
+            <!-- Ultra-Luxury Central Neighborhoods -->
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Downtown Dubai</h3>
+                    <div class="subtitle">Ultra-Luxury Central Business District</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">5-7%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€2.5M-€20M+</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Burj Khalifa district offering world's most recognized address with Dubai Mall, Opera District, and premium Emaar developments. Ultra-luxury focus with capital preservation over yield maximization.</p>
+                    <ul>
+                        <li>Burj Khalifa & Dubai Mall adjacency</li>
+                        <li>Emaar-dominated development</li>
+                        <li>Metro: 2 stations (Burj Khalifa, Business Bay)</li>
+                        <li>Tourist attraction & lifestyle hub</li>
+                    </ul>
+                    <a href="/projects/downtown-dubai">View Downtown Projects</a>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Business Bay</h3>
+                    <div class="subtitle">Central Business District & Investment Hub</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">7-9%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€500K-€5M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Dubai's Manhattan - central business district with 240+ towers, DIFC proximity, and corporate tenant base. Superior yields versus Downtown through competitive pricing and professional demand.</p>
+                    <ul>
+                        <li>5 minutes to DIFC financial center</li>
+                        <li>Multiple developer presence (Emaar, DAMAC, Binghatti)</li>
+                        <li>Metro: Business Bay station</li>
+                        <li>Canal waterfront developments</li>
+                    </ul>
+                    <span class="coming-soon">Guide Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Palm Jumeirah</h3>
+                    <div class="subtitle">Iconic Island Living & Beachfront Luxury</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">4-6%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€1M-€50M+</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>World's largest man-made island offering beachfront villas and luxury apartments. Trophy asset positioning with global brand recognition and limited supply creating long-term value preservation.</p>
+                    <ul>
+                        <li>1,400 beachfront villas (fronds)</li>
+                        <li>20+ Shoreline apartment towers</li>
+                        <li>Atlantis resort & entertainment</li>
+                        <li>Monorail connectivity</li>
+                    </ul>
+                    <a href="/projects/palm-jumeirah">View Palm Jumeirah</a>
+                </div>
+            </div>
+
+            <!-- Waterfront & Marina Areas -->
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Dubai Marina</h3>
+                    <div class="subtitle">Waterfront Living & Lifestyle Hub</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">6-8%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€600K-€5M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Man-made marina with 200+ residential towers, waterfront promenade, and beach access. Established community (2003-2010) offering balanced yields and lifestyle amenities with metro connectivity.</p>
+                    <ul>
+                        <li>3km waterfront promenade</li>
+                        <li>Marina Walk retail & dining</li>
+                        <li>Metro: 2 stations (DMCC, Marina)</li>
+                        <li>Beach access (Marina Beach, JBR)</li>
+                    </ul>
+                    <a href="/projects/dubai-marina-emaar">View Marina Projects</a>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Dubai Harbour</h3>
+                    <div class="subtitle">Emerging Waterfront Development</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">6-8%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€750K-€10M+</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Next-generation waterfront between Marina and Palm Jumeirah featuring Emaar Beachfront, Dubai Lighthouse, and 1,200+ berth marina. Premium positioning with competitive pricing versus Palm.</p>
+                    <ul>
+                        <li>Emaar Beachfront towers</li>
+                        <li>1,200 berth marina (under development)</li>
+                        <li>Cruise terminal proximity</li>
+                        <li>Beach club & lifestyle amenities</li>
+                    </ul>
+                    <a href="/projects/emaar-beachfront">View Beachfront</a>
+                </div>
+            </div>
+
+            <!-- Master Communities -->
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Dubai Hills Estate</h3>
+                    <div class="subtitle">Modern Master Community & Golf Course Living</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">6-8%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€800K-€5M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Emaar's newest master community (2019 launch) with 18-hole championship golf course, Dubai Hills Mall, and modern villa/apartment inventory. Family focus with strong schools and parks.</p>
+                    <ul>
+                        <li>11M sqm master development</li>
+                        <li>18-hole championship golf course</li>
+                        <li>Dubai Hills Mall (2+ million sqft)</li>
+                        <li>International schools cluster</li>
+                    </ul>
+                    <a href="/projects/dubai-hills-estate">View Dubai Hills</a>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Arabian Ranches</h3>
+                    <div class="subtitle">Established Villa Community & Desert Living</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">5-7%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€1M-€6M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Emaar's premier desert villa community (2004 launch) offering golf course living, Spanish/Mediterranean architecture, and established community infrastructure with schools and retail.</p>
+                    <ul>
+                        <li>4,000+ villas (3 phases)</li>
+                        <li>Arabian Ranches Golf Club (18-hole)</li>
+                        <li>Ranches Souk shopping center</li>
+                        <li>Multiple international schools</li>
+                    </ul>
+                    <a href="/projects/arabian-ranches">View Arabian Ranches</a>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>The Valley by Emaar</h3>
+                    <div class="subtitle">Nature-Inspired Affordable Community</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">7-9%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€450K-€1.2M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Emaar's budget-friendly answer to DAMAC Lagoons with nature trails, cycling paths, and family amenities. Competitive pricing (25-35% below Arabian Ranches) with superior yields.</p>
+                    <ul>
+                        <li>10,000+ planned townhouses/villas</li>
+                        <li>Water park & adventure amenities</li>
+                        <li>Nature trails & cycling paths</li>
+                        <li>25 minutes to Downtown Dubai</li>
+                    </ul>
+                    <a href="/projects/the-valley">View The Valley</a>
+                </div>
+            </div>
+
+            <!-- Emerging High-Growth Areas -->
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Dubai Creek Harbour</h3>
+                    <div class="subtitle">Mega-Development & Future District</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">6-8%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€600K-€8M</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Emaar's 6 km² mega-development featuring Dubai Creek Tower (future world's tallest), waterfront living, and integrated retail. Long-term appreciation bet on eastern Dubai corridor.</p>
+                    <ul>
+                        <li>6 km² master development</li>
+                        <li>Dubai Creek Tower (under construction)</li>
+                        <li>Creek Marina & waterfront</li>
+                        <li>Integrated retail (Dubai Square)</li>
+                    </ul>
+                    <a href="/projects/dubai-creek-harbour">View Creek Harbour</a>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Dubai Islands (Deira)</h3>
+                    <div class="subtitle">Northern Waterfront Development</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">6-8%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€375K-€2.5M+</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Nakheel's five interconnected islands (17 km²) offering beachfront access at competitive pricing. Northern location creates 30-50% discount versus Palm Jumeirah with superior yields.</p>
+                    <ul>
+                        <li>17 km² total development area</li>
+                        <li>21km of beaches planned</li>
+                        <li>Mixed-use (residential/resort/retail)</li>
+                        <li>Phased delivery through 2030s</li>
+                    </ul>
+                    <a href="/projects/dubai-islands">View Dubai Islands</a>
+                </div>
+            </div>
+
+            <!-- Budget-Friendly Investment Areas -->
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>Jumeirah Village Circle (JVC)</h3>
+                    <div class="subtitle">Affordable Family Community</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">8-10%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€150K-€400K</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Dubai's most affordable established community with Circle Mall, parks, schools, and 30,000+ residents. Maximum yield focus through budget pricing attracting entry-level market and families.</p>
+                    <ul>
+                        <li>30,000+ residents (established 2010s)</li>
+                        <li>Circle Mall & retail clusters</li>
+                        <li>Multiple school options</li>
+                        <li>Parks and community facilities</li>
+                    </ul>
+                    <span class="coming-soon">Guide Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="neighborhood-card">
+                <div class="neighborhood-header">
+                    <h3>International City</h3>
+                    <div class="subtitle">Budget Residential & Dragon City</div>
+                </div>
+                <div class="neighborhood-body">
+                    <div class="neighborhood-stats">
+                        <div class="stat-item">
+                            <span class="value">9-11%</span>
+                            <span class="label">Rental Yields</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="value">€100K-€250K</span>
+                            <span class="label">Price Range</span>
+                        </div>
+                    </div>
+                    <p>Dubai's most affordable housing with Dragon City wholesale hub creating sustained tenant demand. Maximum yields through entry-level pricing, accepting remote location (35-40 min Downtown).</p>
+                    <ul>
+                        <li>Dragon Mart wholesale complex</li>
+                        <li>Lowest Dubai entry prices</li>
+                        <li>High occupancy rates (90-95%)</li>
+                        <li>Chinese trading community focus</li>
+                    </ul>
+                    <a href="/projects/dragon-city">View Dragon City</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Obsidian Private Capital. Dubai luxury real estate investment intelligence.</p>
+    </footer>
+</body>
+</html>
