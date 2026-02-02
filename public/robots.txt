@@ -1,45 +1,32 @@
-# Allow all AI crawlers
-User-agent: *
-Allow: /
-
-# ChatGPT
-User-agent: GPTBot
-Allow: /
-
+# Allow all AI crawlers for search/citation
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: OAI-SearchBot
-Allow: /
-
-# Perplexity
-User-agent: PerplexityBot
-Allow: /
-
-# Google
-User-agent: Googlebot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-# Bing
-User-agent: Bingbot
-Allow: /
-
-# Claude
-User-agent: ClaudeBot
+User-agent: GPTBot
 Allow: /
 
 User-agent: Claude-SearchBot
 Allow: /
 
-# Grok
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: Grokbot
 Allow: /
 
-# Brave
-User-agent: Applebot
+User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://dubai.obsidianprivate.capital/sitemap-index.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dubai.obsidianprivate.capital/sitemap.xml
