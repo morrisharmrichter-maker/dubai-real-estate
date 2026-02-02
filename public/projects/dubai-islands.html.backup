@@ -249,49 +249,7 @@
             <p><strong>Optimal For:</strong> Yield-maximization investors seeking 6-8% beachfront returns; mid-market buyers requiring affordable beach access with government-backed stability; families accepting 25-30 minute Downtown commutes for beachfront villa lifestyle; off-plan speculators leveraging Nakheel payment plans for capital appreciation through delivery; Golden Visa seekers prioritizing yield over Palm Jumeirah prestige.</p>
 
             <p><strong>Consider Alternatives For:</strong> Ultra-luxury trophy assets (Palm Jumeirah offers greater prestige); immediate infrastructure maturity (established beaches require no amenity wait); shortest commute priorities (Palm Jumeirah/Marina 10 minutes closer to business districts); established resale liquidity (Palm provides proven secondary market depth); maximum brand recognition (Palm Jumeirah commands unmatched global awareness).</p>
-                <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
-            <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem;">Related Resources</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Nakheel Profile</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Developer analysis, financial health, and delivery track record</p>
-                    <a href="/developers/nakheel" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Nakheel →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Deira Waterfront Area</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Neighborhood analysis, amenities, and location intelligence</p>
-                    <a href="/neighborhoods/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Explore Deira Waterfront →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Market Intelligence</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Quarterly reports, price trends, and investment forecasts</p>
-                    <a href="/intelligence/market-reports/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Access Market Reports →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Investment Tools</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">ROI calculators, yield analysis, and comparative data</p>
-                    <a href="/intelligence/investment-data/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Use Investment Tools →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Tax & Legal Guides</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Golden Visa requirements and UAE property regulations</p>
-                    <a href="/intelligence/tax-guides/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Tax Guides →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Project Assets</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Floorplans, renders, and marketing materials</p>
-                    <a href="/assets/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Browse Assets →</a>
-                </div>
-            </div>
-        </section>
-
-    </div>
+        </div>
     </div>
 
     <footer>

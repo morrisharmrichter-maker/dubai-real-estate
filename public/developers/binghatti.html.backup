@@ -269,37 +269,7 @@
                     <li><a href="/developers/azizi.html">Azizi Developments - Budget Alternative</a></li>
                 </ul>
             </div>
-                <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
-            <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem;">Explore More</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Binghatti Projects</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">View all developments by Binghatti</p>
-                    <a href="/projects/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Browse Projects →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Developer Analysis</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Financial health and delivery track record assessment</p>
-                    <a href="/intelligence/developer-analysis/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Analysis →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Compare Developers</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Side-by-side comparison of Dubai's top developers</p>
-                    <a href="/developers/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View All Developers →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Market Intelligence</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Market reports and investment data</p>
-                    <a href="/intelligence/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Intelligence Hub →</a>
-                </div>
-            </div>
-        </section>
-
-    </div>
+        </div>
     </div>
 
     <footer>

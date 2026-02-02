@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QJ3PH5VN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4QJ3PH5VN7');
-</script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4QJ3PH5VN7');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian Private Capital | Dubai Luxury Real Estate Investment Intelligence</title>
-    <meta name="description" content="Institutional-grade Dubai luxury real estate investment analysis for ultra-high-net-worth investors. Golden Visa eligible properties, portfolio optimization, and market intelligence.">
-    <link rel="canonical" href="https://dubai.obsidianprivate.capital">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Obsidian Private Capital",
-      "url": "https://dubai.obsidianprivate.capital",
-      "description": "Institutional-grade Dubai luxury real estate investment intelligence",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dubai",
-        "addressCountry": "AE"
-      }
-    }
-    </script>
+    <title>Dubai Luxury Real Estate Investment Intelligence 2026 | Obsidian Private Capital</title>
+    <meta name="description" content="Institutional-grade Dubai real estate investment intelligence. Comprehensive developer profiles, project analysis, market reports, and neighborhood guides for UHNW investors and family offices.">
+    <link rel="canonical" href="https://dubai.obsidianprivate.capital/">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,134 +29,234 @@
             padding: 3rem 5%;
             text-align: center;
         }
-        header h1 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600; }
+        header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
         header p { font-size: 1.2rem; opacity: 0.9; }
+        
         .container { max-width: 1200px; margin: 0 auto; padding: 3rem 5%; }
-        .hero {
+        
+        .intro {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .intro h2 { font-size: 2rem; margin-bottom: 1rem; color: #1a1a1a; }
+        .intro p { font-size: 1.1rem; line-height: 1.8; color: #444; max-width: 900px; margin: 0 auto; }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .nav-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .nav-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #c9a55a;
+        }
+        .nav-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .nav-card .count {
+            font-size: 0.85rem;
+            color: #999;
+            font-weight: 600;
+        }
+        
+        .featured-section {
             background: white;
             padding: 3rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             margin-bottom: 3rem;
         }
-        .hero h2 { font-size: 2rem; margin-bottom: 1.5rem; color: #1a1a1a; font-weight: 600; }
-        .hero h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: #2d2d2d; font-weight: 600; }
-        .hero p { font-size: 1.1rem; margin-bottom: 1rem; line-height: 1.8; }
-        .hero ul { list-style-position: inside; margin: 1rem 0 1rem 1rem; }
-        .hero li { margin-bottom: 0.5rem; font-size: 1.05rem; }
-        .stats {
+        .featured-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        .featured-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
         }
-        .stat {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .stat h3 { font-size: 2.5rem; color: #c9a55a; margin-bottom: 0.5rem; font-weight: 700; }
-        .stat p { color: #666; font-size: 1rem; }
-        .cta {
-            background: linear-gradient(135deg, #c9a55a 0%, #a8894a 100%);
-            color: white;
-            padding: 3rem;
-            border-radius: 8px;
-            text-align: center;
-            margin: 3rem 0;
-        }
-        .cta h2 { font-size: 2rem; margin-bottom: 1rem; font-weight: 600; }
-        .cta p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .cta a {
-            display: inline-block;
-            background: white;
-            color: #c9a55a;
-            padding: 1rem 2rem;
+        
+        .featured-card {
+            border-left: 4px solid #c9a55a;
+            padding: 1.5rem;
+            background: #f8f8f8;
             border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s;
         }
-        .cta a:hover { transform: translateY(-2px); }
+        .featured-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        .featured-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .featured-card a {
+            color: #c9a55a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .featured-card a:hover { text-decoration: underline; }
+        
         footer {
             background: #1a1a1a;
             color: white;
             padding: 2rem 5%;
             text-align: center;
-            margin-top: 4rem;
-        }
-        footer p { opacity: 0.8; }
-        @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .hero h2 { font-size: 1.5rem; }
-            .hero { padding: 2rem; }
-            .stats { grid-template-columns: 1fr; gap: 1rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Obsidian Private Capital</h1>
-        <p>Dubai Luxury Real Estate Investment Intelligence</p>
+        <h1>Dubai Real Estate Investment Intelligence</h1>
+        <p>Institutional-Grade Analysis for UHNW Investors & Family Offices</p>
     </header>
 
     <div class="container">
-        <section class="hero">
-            <h2>Institutional-Grade Dubai Real Estate Analysis for UHNW Investors</h2>
-            
-            <p><strong>Palm Jumeirah luxury villas deliver 6-8% annual rental yields with Golden Visa eligibility at €750,000+ investment threshold.</strong> Beachfront properties appreciate 12-15% annually since 2023, driven by Dubai's 5.1% GDP growth and zero personal income tax structure attracting ultra-high-net-worth investors globally.</p>
-            
-            <p>Obsidian Private Capital provides comprehensive investment intelligence for ultra-high-net-worth individuals and institutional investors seeking Dubai luxury real estate exposure. Our analysis covers portfolio optimization, Golden Visa qualification, rental yield projections, and market trend forecasting across Dubai's premier neighborhoods.</p>
+        <section class="intro">
+            <h2>Welcome to Obsidian Private Capital</h2>
+            <p>Comprehensive investment intelligence for Dubai's luxury real estate market. Navigate 35+ flagship projects, 10 major developers, 12 prime neighborhoods, and extensive market research designed for institutional investors, family offices, and ultra-high-net-worth individuals seeking data-driven allocation strategies in the world's fastest-growing luxury property market.</p>
         </section>
 
-        <div class="stats">
-            <div class="stat">
-                <h3>6-8%</h3>
-                <p>Annual Rental Yields<br>Palm Jumeirah Properties</p>
-            </div>
-            <div class="stat">
-                <h3>12-15%</h3>
-                <p>Annual Appreciation<br>Beachfront Luxury Villas</p>
-            </div>
-            <div class="stat">
-                <h3>€750k+</h3>
-                <p>Golden Visa Threshold<br>Investment Requirement</p>
-            </div>
-            <div class="stat">
-                <h3>0%</h3>
-                <p>Personal Income Tax<br>Dubai Tax Structure</p>
-            </div>
+        <div class="nav-grid">
+            <a href="/developers/" class="nav-card">
+                <span class="icon">🏢</span>
+                <h3>Developers</h3>
+                <p>Comprehensive profiles of Dubai's top 10 developers including Emaar, Nakheel, DAMAC, and emerging players. Financial health, delivery records, and risk assessments.</p>
+                <span class="count">10 Developer Profiles</span>
+            </a>
+
+            <a href="/projects/" class="nav-card">
+                <span class="icon">🏗️</span>
+                <h3>Projects</h3>
+                <p>Detailed analysis of 35+ flagship developments covering investment potential, rental yields, pricing, amenities, and Golden Visa eligibility for institutional portfolios.</p>
+                <span class="count">35+ Project Guides</span>
+            </a>
+
+            <a href="/neighborhoods/" class="nav-card">
+                <span class="icon">📍</span>
+                <h3>Neighborhoods</h3>
+                <p>Location-based analysis of Dubai's 12 prime residential areas from ultra-luxury Downtown to emerging high-growth districts. Micro-market intelligence and comparative metrics.</p>
+                <span class="count">12 Neighborhood Guides</span>
+            </a>
+
+            <a href="/intelligence/" class="nav-card">
+                <span class="icon">📊</span>
+                <h3>Intelligence Hub</h3>
+                <p>Market reports, tax guides, government policies, investment data, and developer analysis. Institutional-grade research supporting strategic allocation decisions.</p>
+                <span class="count">5 Research Categories</span>
+            </a>
+
+            <a href="/assets/" class="nav-card">
+                <span class="icon">📁</span>
+                <h3>Assets Library</h3>
+                <p>Comprehensive repository of floorplans, architectural renders, photography, brochures, and location maps for due diligence and client presentations.</p>
+                <span class="count">6 Asset Categories</span>
+            </a>
+
+            <a href="/palm-jumeirah-investment-guide-2026" class="nav-card">
+                <span class="icon">🌴</span>
+                <h3>Featured Guide</h3>
+                <p>Complete Palm Jumeirah investment guide covering the world's most iconic man-made island, villa market analysis, and beachfront investment strategies.</p>
+                <span class="count">Comprehensive Analysis</span>
+            </a>
         </div>
 
-        <section class="hero">
-            <h2>Why Dubai Luxury Real Estate in 2026?</h2>
-            
-            <p>Dubai's real estate market combines exceptional returns with strategic tax advantages. The emirate's zero personal income tax policy, coupled with sustained 5.1% GDP growth, creates ideal conditions for wealth preservation and appreciation.</p>
-            
-            <h3>Golden Visa Investment Pathway</h3>
-            <p>Properties valued at €750,000+ qualify investors for UAE Golden Visa residency, providing 10-year renewable residency status with no physical presence requirements. This enables portfolio diversification while maintaining global mobility.</p>
-            
-            <h3>Premier Investment Locations</h3>
-            <ul>
-                <li><strong>Palm Jumeirah:</strong> Beachfront villas, 6-8% yields, €2M-€50M range</li>
-                <li><strong>Dubai Marina:</strong> High-rise luxury, 5-7% yields, €500k-€5M range</li>
-                <li><strong>Emirates Hills:</strong> Gated estates, 4-6% yields, €5M-€30M range</li>
-                <li><strong>Downtown Dubai:</strong> Burj Khalifa proximity, 5-8% yields, €800k-€15M range</li>
-            </ul>
+        <section class="featured-section">
+            <h2>Featured Intelligence</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3>Market Reports</h3>
+                    <p>Quarterly market analysis, annual reports, and luxury segment deep-dives covering transaction volumes, price trends, and foreign investment flows.</p>
+                    <a href="/intelligence/market-reports/">Access Reports →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>Tax & Legal Guides</h3>
+                    <p>UAE property taxation, Golden Visa requirements, foreign ownership regulations, and transaction cost breakdowns for international investors.</p>
+                    <a href="/intelligence/tax-guides/">View Guides →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>Developer Analysis</h3>
+                    <p>Comprehensive due diligence on major developers covering financial health, delivery track records, quality assessments, and risk profiles.</p>
+                    <a href="/intelligence/developer-analysis/">Read Analysis →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>Investment Data</h3>
+                    <p>Live market data, rental yield heatmaps, price trend analysis, ROI calculators, and comparative market analytics for institutional decision-making.</p>
+                    <a href="/intelligence/investment-data/">Explore Data →</a>
+                </div>
+            </div>
         </section>
 
-        <div class="cta">
-            <h2>Request Investment Intelligence Report</h2>
-            <p>Receive comprehensive analysis of Dubai luxury real estate opportunities aligned with your portfolio objectives.</p>
-            <a href="mailto:morris@obsidianprivate.capital">Contact Our Team</a>
-        </div>
+        <section class="featured-section">
+            <h2>Top Developments</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3>Downtown Dubai</h3>
+                    <p>Ultra-luxury Burj Khalifa district. 5-7% yields, €2.5M-€20M+ pricing. World's most recognized address with trophy asset positioning.</p>
+                    <a href="/projects/downtown-dubai">View Project →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>Palm Jumeirah</h3>
+                    <p>Iconic beachfront island. 4-6% yields, €1M-€50M+ pricing. Limited supply, global brand recognition, capital preservation focus.</p>
+                    <a href="/projects/palm-jumeirah">View Project →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>Dubai Hills Estate</h3>
+                    <p>Modern master community. 6-8% yields, €800K-€5M pricing. Golf course living, family-focused with strong schools and Dubai Hills Mall.</p>
+                    <a href="/projects/dubai-hills-estate">View Project →</a>
+                </div>
+
+                <div class="featured-card">
+                    <h3>DAMAC Lagoons</h3>
+                    <p>Mediterranean-themed waterfront. 8-10% yields, €600K-€2M pricing. Superior yields through competitive pricing and lagoon lifestyle.</p>
+                    <a href="/projects/damac-lagoons">View Project →</a>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Obsidian Private Capital. Dubai luxury real estate investment intelligence for institutional investors and UHNW individuals.</p>
+        <p>&copy; 2026 Obsidian Private Capital. Dubai luxury real estate investment intelligence.</p>
     </footer>
 </body>
 </html>

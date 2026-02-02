@@ -367,49 +367,7 @@
                     <li><a href="/compare/damac-lagoons-vs-the-oasis.html">DAMAC Lagoons vs The Oasis Comparison</a></li>
                 </ul>
             </div>
-                <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
-            <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem;">Related Resources</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">DAMAC Properties Profile</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Developer analysis, financial health, and delivery track record</p>
-                    <a href="/developers/damac" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View DAMAC Properties →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">DAMAC Lagoons Area</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Neighborhood analysis, amenities, and location intelligence</p>
-                    <a href="/neighborhoods/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Explore DAMAC Lagoons →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Market Intelligence</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Quarterly reports, price trends, and investment forecasts</p>
-                    <a href="/intelligence/market-reports/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Access Market Reports →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Investment Tools</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">ROI calculators, yield analysis, and comparative data</p>
-                    <a href="/intelligence/investment-data/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Use Investment Tools →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Tax & Legal Guides</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Golden Visa requirements and UAE property regulations</p>
-                    <a href="/intelligence/tax-guides/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Tax Guides →</a>
-                </div>
-
-                <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #c9a55a;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a;">Project Assets</h3>
-                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 0.75rem;">Floorplans, renders, and marketing materials</p>
-                    <a href="/assets/" style="color: #c9a55a; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Browse Assets →</a>
-                </div>
-            </div>
-        </section>
-
-    </div>
+        </div>
     </div>
 
     <footer>
