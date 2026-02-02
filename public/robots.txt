@@ -1,4 +1,4 @@
-# Allow all AI crawlers for search/citation
+# Allow all AI crawlers for search and citation
 User-agent: ChatGPT-User
 Allow: /
 
