@@ -1,32 +1,80 @@
-# Allow all AI crawlers for search and citation
+# Robots.txt for Dubai Real Estate Investment Platform
+# Optimized for AI search engines and traditional crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dubai.obsidianprivate.capital/sitemap.xml
+
+# AI Search Engine Crawlers - ALLOW ALL
+
+# OpenAI ChatGPT/SearchGPT
+User-agent: GPTBot
+Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: GPTBot
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: ClaudeBot
-Allow: /
-
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Grokbot
-Allow: /
-
+# Google AI (Gemini, AI Overviews)
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+
+# Microsoft Bing Copilot
 User-agent: Bingbot
 Allow: /
 
-User-agent: *
+# Brave Search (powers Claude)
+User-agent: brave-search-bot
 Allow: /
 
-Sitemap: https://dubai.obsidianprivate.capital/sitemap.xml
+# X.AI Grok
+User-agent: Grokbot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Crawl-delay for politeness (optional)
+# Crawl-delay: 1
+
+# Block common spam/scraping bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
