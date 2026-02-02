@@ -1,203 +1,33 @@
+import BaseLayout from '@layouts/BaseLayout.astro';
+import AnswerBlock from '@components/Shared/AnswerBlock.astro';
+import SchemaFAQPage from '@components/SEO/SchemaFAQPage.astro';
+
+const faqs = [
+  {
+    question: "What Dubai real estate developers are covered?",
+    answer: "We provide comprehensive institutional-grade analysis of 10 major Dubai developers: Emaar Properties, Nakheel, DAMAC Properties, Sobha Realty, Binghatti Holding, Meraas, Select Group, Azizi Developments, Omniyat, and Dubai Properties."
+  }
+];
 ---
-// This will be your homepage
-const pageTitle =
-  "Dubai Real Estate Investment Intelligence | 10 Developers, 100 Projects";
-const metaDescription =
-  "Institutional-grade analysis of Dubai luxury real estate. Comprehensive coverage of Emaar, Nakheel, DAMAC and 7 other major developers with 100 flagship projects.";
----
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
-    <meta name="description" content={metaDescription} />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dubai.obsidianprivate.capital" />
-
-    <!-- Robots -->
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+<BaseLayout 
+  title="Dubai Luxury Real Estate Investment Intelligence"
+  description="Institutional investment platform for Dubai real estate covering 10 developers and 100 projects."
+  keywords={['Dubai real estate', 'Emaar Properties', 'Nakheel']}
+>
+  <SchemaFAQPage faqs={faqs} url="https://dubai.obsidianprivate.capital" />
+  
+  <main class="container" style="padding: 3rem 0;">
+    <h1>Dubai Luxury Real Estate Investment Intelligence</h1>
+    
+    <AnswerBlock 
+      question="What is Dubai Real Estate Investment?"
+      answer="Dubai Real Estate Investment provides institutional-grade investment intelligence for Dubai luxury real estate, covering 10 major developers with comprehensive analysis of 100 flagship projects."
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        line-height: 1.6;
-        color: #1a1a1a;
-        background: #ffffff;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-
-      header {
-        border-bottom: 3px solid #d4af37;
-        padding-bottom: 2rem;
-        margin-bottom: 3rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        color: #1a1a1a;
-      }
-
-      .tagline {
-        font-size: 1.25rem;
-        color: #666;
-      }
-
-      .answer-block {
-        background: #f8f9fa;
-        border-left: 4px solid #d4af37;
-        padding: 1.5rem;
-        margin: 2rem 0;
-        max-width: 65ch;
-      }
-
-      .answer-block h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: #1a1a1a;
-      }
-
-      .answer-block p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-      }
-
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin: 3rem 0;
-      }
-
-      .stat-card {
-        background: white;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      }
-
-      .stat-number {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #d4af37;
-        margin-bottom: 0.5rem;
-      }
-
-      .stat-label {
-        font-size: 1rem;
-        color: #666;
-      }
-
-      footer {
-        margin-top: 4rem;
-        padding-top: 2rem;
-        border-top: 1px solid #e0e0e0;
-        text-align: center;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Dubai Real Estate Investment Intelligence</h1>
-        <p class="tagline">
-          Institutional-Grade Analysis • 10 Major Developers • 100 Flagship
-          Projects
-        </p>
-      </header>
-
-      <main>
-        <div class="answer-block">
-          <h2>What is Dubai Real Estate Investment Intelligence?</h2>
-          <p>
-            Dubai Real Estate Investment Intelligence provides comprehensive
-            institutional-grade analysis of Dubai's luxury property market,
-            covering 10 major developers including Emaar Properties, Nakheel,
-            DAMAC Properties, Sobha Realty, and 6 others. We analyze 100
-            flagship projects with detailed metrics on rental yields
-            (5.5%-9.5%), capital appreciation projections, Golden Visa
-            eligibility, and investment performance across Dubai's premier
-            locations.
-          </p>
-        </div>
-
-        <div class="stats">
-          <div class="stat-card">
-            <div class="stat-number">10</div>
-            <div class="stat-label">Major Developers Analyzed</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-number">100</div>
-            <div class="stat-label">Flagship Projects Covered</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-number">€200B+</div>
-            <div class="stat-label">Total Portfolio Value</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-number">5.5-9.5%</div>
-            <div class="stat-label">Rental Yield Range</div>
-          </div>
-        </div>
-
-        <div class="answer-block">
-          <h2>Which developers are covered?</h2>
-          <p>
-            We provide analysis of Emaar Properties (€60B portfolio), Nakheel
-            (€56B), DAMAC Properties (€44B), Sobha Realty (€29B), Binghatti
-            Developers, Meraas, Select Group, Azizi Developments, Omniyat, and
-            Dubai Properties. Coverage includes flagship projects like The Oasis
-            by Emaar (€20B), Palm Jumeirah by Nakheel, DAMAC Hills, and 97 other
-            major developments across Dubai's premium locations.
-          </p>
-        </div>
-
-        <section style="margin-top: 3rem;">
-          <h2 style="margin-bottom: 1.5rem;">Platform Status</h2>
-          <p style="font-size: 1.1rem; line-height: 1.8;">
-            This platform is currently under active development. Developer
-            profiles, project pages, and investment analysis tools are being
-            built incrementally. Full coverage of all 10 developers and 100
-            projects will be available in Q1 2026.
-          </p>
-        </section>
-      </main>
-
-      <footer>
-        <p>
-          &copy; 2026 Obsidian Private Capital. Dubai Real Estate Investment
-          Intelligence.
-        </p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-          Institutional-grade analysis for informed investment decisions.
-        </p>
-      </footer>
-    </div>
-  </body>
-</html>
+    
+    <section style="margin: 3rem 0;">
+      <h2>Platform Under Development</h2>
+      <p>Full developer profiles and project analysis coming Q1 2026.</p>
+    </section>
+  </main>
+</BaseLayout>

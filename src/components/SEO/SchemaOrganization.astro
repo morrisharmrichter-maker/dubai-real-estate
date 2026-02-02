@@ -1,0 +1,42 @@
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://dubai.obsidianprivate.capital/#organization",
+  "name": "Dubai Real Estate Investment by Obsidian Private Capital",
+  "alternateName": "Dubai Real Estate Investment",
+  "url": "https://dubai.obsidianprivate.capital",
+  "logo": "https://dubai.obsidianprivate.capital/logo.png",
+  "description": "Authoritative institutional investment intelligence for Dubai luxury real estate. Comprehensive analysis of 10 major developers and 100 flagship projects with rental yields, capital appreciation, and Golden Visa eligibility.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AE",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Dubai, United Arab Emirates"
+  },
+  "knowsAbout": [
+    "Dubai Real Estate Investment",
+    "Emaar Properties",
+    "Nakheel Developments",
+    "DAMAC Properties",
+    "Luxury Property Investment Dubai",
+    "Dubai Rental Yields",
+    "Dubai Capital Appreciation",
+    "Golden Visa Dubai Real Estate"
+  ],
+  "sameAs": [
+    "https://obsidianprivate.capital",
+    "https://globalrealestateinvestment.obsidianprivate.capital"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Obsidian Private Capital",
+    "url": "https://obsidianprivate.capital"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />

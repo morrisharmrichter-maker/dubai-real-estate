@@ -1,0 +1,63 @@
+interface Props {
+  project: {
+    name: string;
+    developer: string;
+    description: string;
+    location: string;
+    priceRange: {
+      min: { aed: number; eur: number };
+      max: { aed: number; eur: number };
+    };
+    totalUnits: number;
+    completionDate: string;
+    amenities: string[];
+    rentalYield?: {
+      min: number;
+      max: number;
+    };
+    goldenVisaEligible: boolean;
+  };
+  url: string;
+}
+
+const { project, url } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "@id": `${url}#listing`,
+  "name": project.name,
+  "description": project.description,
+  "url": url,
+  "provider": {
+    "@type": "RealEstateAgent",
+    "name": project.developer
+  },
+  "location": {
+    "@type": "Place",
+    "name": project.location,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": project.location,
+      "addressRegion": "Dubai",
+      "addressCountry": "AE"
+    }
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "AED",
+    "lowPrice": project.priceRange.min.aed,
+    "highPrice": project.priceRange.max.aed,
+    "offerCount": project.totalUnits,
+    "availability": "https://schema.org/InStock"
+  },
+  "amenityFeature": project.amenities.map(amenity => ({
+    "@type": "LocationFeatureSpecification",
+    "name": amenity
+  })),
+  "datePosted": new Date().toISOString().split('T')[0],
+  "validThrough": project.completionDate
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />

@@ -1,17 +1,12 @@
 {
-  "name": "y",
+  "name": "dubai-real-estate",
+  "version": "1.0.0",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "npx serve public -p 4321",
+    "build": "echo 'Static site - no build needed'"
   },
-  "dependencies": {
-    "@astrojs/sitemap": "^3.7.0",
-    "@astrojs/vercel": "^9.0.4",
-    "astro": "^5.17.1",
-    "chart.js": "^4.5.1"
+  "devDependencies": {
+    "serve": "^14.2.1"
   }
 }
